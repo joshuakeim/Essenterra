@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solana Lightcore – Interface</title>
+  <style>
+    body {
+      background: radial-gradient(circle, #101820, #000);
+      color: #39ffcc;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+    .node-status {
+      margin-top: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 0 0 20px #39ffcc;
+    }
+    .status-item {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+    }
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { color: #39ffcc; }
+      50% { color: #ffffff; }
+      100% { color: #39ffcc; }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="pulse">Solana Lightcore</h1>
+  <div class="node-status">
+    <div class="status-item">🌍 Node 001: <strong>Phoenix Well</strong> – Online</div>
+    <div class="status-item">💧 Dimensional Overlay: Active</div>
+    <div class="status-item">🗣 Voice Interface: Listening</div>
+    <div class="status-item">📡 Command Stream: Clear</div>
+    <div class="status-item">🌀 Return Corridor: OPEN</div>
+  </div>
+</body>
+</html>
